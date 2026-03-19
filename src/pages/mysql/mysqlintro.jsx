@@ -28,9 +28,8 @@ const MySQLIntro = () => {
 
       {/* 1. FIXED HEADER (Added Active States) */}
       <header className="fixed top-0 left-0 right-0 h-16 bg-gray-600 text-blue-50 flex items-center overflow-x-auto whitespace-nowrap px-4 z-50 shadow-md">
-       
-          <div>
-            <Link to={"/hsk1"}>
+        <div>
+          <Link to={"/hsk1"}>
             Chinese{" "}
             <span className="text-[10px] ml-1 opacity-70 italic">
               (Myanmar)
@@ -92,7 +91,16 @@ const MySQLIntro = () => {
               (Myanmar)
             </span>
           </Link>
-          </div>
+        </div>
+
+        <div className="flex-shrink-0 px-3 py-1">
+          <Link to={"/component"}>
+            Build Basic Project{" "}
+            <span className="text-[10px] ml-1 opacity-70 italic">
+              (Myanmar)
+            </span>
+          </Link>
+        </div>
       </header>
 
       {/* Hero Navigation (Internal Logo Section) */}
@@ -163,7 +171,6 @@ const MySQLIntro = () => {
               >
                 Learn Right Now
               </Link>
-            
             </div>
           </div>
 

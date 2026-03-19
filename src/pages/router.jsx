@@ -86,6 +86,15 @@ import N5videos from "./japan/n5/video/n5video";
 import Policy from "../about/policy";
 import Contact from "../about/contact";
 import About from "../about/about";
+import Maincomponent from "./componment/main";
+import BeautifulButtons from "./componment/button";
+import StyledTextInputs from "./componment/input";
+import {Allalert} from "./componment/alerts";
+import Alltheselector from "./componment/selector";
+import AllTheTables from "./componment/tables";
+import AllTheCollapsibles from "./componment/collsible";
+import Componentintro from "./componment/intro";
+
 
 const router = createBrowserRouter([
   {
@@ -95,18 +104,17 @@ const router = createBrowserRouter([
   },
 
   {
-    path:"/about",
-    Component:Policy
+    path: "/about",
+    Component: Policy,
   },
   {
-    path:"/contact",
-    Component:Contact
-  }
-  ,{
-    path:'/about',
-    Component:About
-  }
-,
+    path: "/contact",
+    Component: Contact,
+  },
+  {
+    path: "/about",
+    Component: About,
+  },
   {
     path: "/hsk1",
     Component: Mainhsk1,
@@ -138,14 +146,14 @@ const router = createBrowserRouter([
       //{ path: "hsk3times", Component: Hsk3times },
       { path: "hsk3adverbs", Component: Hsk3adverbs },
       { path: "hsk3flashcard", Component: Hsk3flashcard },
-       {path:"hsk3video/:id",Component:Hsk3videos},
+      { path: "hsk3video/:id", Component: Hsk3videos },
 
       //hsk4
       { path: "hsk4vocabulary", Component: Hsk4voca },
       { path: "hsk4nouns", Component: Hsk4nouns },
       { path: "hsk4verbs", Component: Hsk4verbs },
       { path: "hsk4flashcard", Component: Hsk4flashcard },
-      {path:"hsk4video/:id",Component:Hsk4videos}
+      { path: "hsk4video/:id", Component: Hsk4videos },
     ],
   },
   {
@@ -214,8 +222,7 @@ const router = createBrowserRouter([
         path: "alphabet",
         Component: N5alphabet,
       },
-      {path:"n5/video/:id",
-        Component:N5videos},
+      { path: "n5/video/:id", Component: N5videos },
       {
         path: "voca",
         Component: N5voca,
@@ -295,7 +302,20 @@ const router = createBrowserRouter([
       },
     ],
   },
-]);
 
+  {
+    path: "/component",
+    Component: Maincomponent,
+    children: [
+      { index: true, Component: Componentintro },
+      { path: "buttons", Component: BeautifulButtons },
+      { path: "inputs", Component: StyledTextInputs },
+      { path: "alert", Component: Allalert },
+      { path: "selector", Component: Alltheselector },
+      { path: "tables", Component: AllTheTables },
+      { path: "collapsible", Component: AllTheCollapsibles },
+    ],
+  },
+]);
 
 export default router

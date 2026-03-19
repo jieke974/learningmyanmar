@@ -26,69 +26,86 @@ export default function Javasciptintro() {
             ☰
           </button>
 
-          <div className="flex overflow-x-auto whitespace-nowrap items-center">
-            <Link to={"/hsk1"}>
-              Chinese{" "}
-              <span className="text-[10px] ml-1 opacity-70 italic">
-                (Myanmar)
-              </span>
-            </Link>
-          </div>
-          <div className="mx-2 px-3 py-1 ">
-            <Link to={"/japan"}>
-              Japan{" "}
-              <span className="text-[10px] ml-1 opacity-70 italic">
-                (Myanmar)
-              </span>
-            </Link>
-          </div>
-          <div className="mx-2 px-3 py-1">
-            <Link to={"/python"}>
-              Python{" "}
-              <span className="text-[10px] ml-1 opacity-70 italic">
-                (Myanmar)
-              </span>
-            </Link>
-          </div>
-          <div className="mx-2 px-3 py-1 ">
-            <Link to={"/html"}>
-              Html{" "}
-              <span className="text-[10px] ml-1 opacity-70 italic">
-                (Myanmar)
-              </span>
-            </Link>
-          </div>
-          <div className="mx-2 px-3 py-1 ">
-            <Link to={"/css"}>
-              Css{" "}
-              <span className="text-[10px] ml-1 opacity-70 italic">
-                (Myanmar)
-              </span>
-            </Link>
-          </div>
-          <div className="mx-2 px-3 py-1 ">
-            <Link to={"/react"}>
-              React{" "}
-              <span className="text-[10px] ml-1 opacity-70 italic">
-                (Myanmar)
-              </span>
-            </Link>
-          </div>
-          <div className="mx-2 px-3 py-1">
-            <Link to={"/javascipt"}>
-              Javascipt{" "}
-              <span className="text-[10px] ml-1 opacity-70 italic">
-                (Myanmar)
-              </span>
-            </Link>
-          </div>
-          <div className="mx-2 px-3 py-1">
-            <Link to={"/mysql"}>
-              Mysql{" "}
-              <span className="text-[10px] ml-1 opacity-70 italic">
-                (Myanmar)
-              </span>
-            </Link>
+          <div className="flex w-full overflow-x-auto items-center flex-nowrap whitespace-nowrap scrollbar-hide py-2">
+            <div className="flex-shrink-0 px-3 py-1">
+              <Link to={"/hsk1"}>
+                Chinese{" "}
+                <span className="text-[10px] ml-1 opacity-70 italic">
+                  (Myanmar)
+                </span>
+              </Link>
+            </div>
+
+            <div className="flex-shrink-0 px-3 py-1">
+              <Link to={"/japan"}>
+                Japan{" "}
+                <span className="text-[10px] ml-1 opacity-70 italic">
+                  (Myanmar)
+                </span>
+              </Link>
+            </div>
+
+            <div className="flex-shrink-0 px-3 py-1">
+              <Link to={"/python"}>
+                Python{" "}
+                <span className="text-[10px] ml-1 opacity-70 italic">
+                  (Myanmar)
+                </span>
+              </Link>
+            </div>
+
+            <div className="flex-shrink-0 px-3 py-1">
+              <Link to={"/html"}>
+                Html{" "}
+                <span className="text-[10px] ml-1 opacity-70 italic">
+                  (Myanmar)
+                </span>
+              </Link>
+            </div>
+
+            <div className="flex-shrink-0 px-3 py-1">
+              <Link to={"/css"}>
+                Css{" "}
+                <span className="text-[10px] ml-1 opacity-70 italic">
+                  (Myanmar)
+                </span>
+              </Link>
+            </div>
+
+            <div className="flex-shrink-0 px-3 py-1">
+              <Link to={"/react"}>
+                React{" "}
+                <span className="text-[10px] ml-1 opacity-70 italic">
+                  (Myanmar)
+                </span>
+              </Link>
+            </div>
+
+            <div className="flex-shrink-0 px-3 py-1">
+              <Link to={"/javascipt"}>
+                Javascript{" "}
+                <span className="text-[10px] ml-1 opacity-70 italic">
+                  (Myanmar)
+                </span>
+              </Link>
+            </div>
+
+            <div className="flex-shrink-0 px-3 py-1">
+              <Link to={"/mysql"}>
+                Mysql{" "}
+                <span className="text-[10px] ml-1 opacity-70 italic">
+                  (Myanmar)
+                </span>
+              </Link>
+            </div>
+            <div className="flex-shrink-0 px-3 py-1">
+              <Link to={"/component"}>
+                Build Basic Project{" "}
+                <span className="text-[10px] ml-1 opacity-70 italic">
+                  (Myanmar)
+                </span>
+              </Link>
+            </div>
           </div>
         </header>
 
